@@ -5,7 +5,7 @@ import Container from './component/Container';
 
 // API HTTPS: "http://www.omdbapi.com/?i=tt3896198&apikey=b1a2c737"
 
-function App() {
+const App = () => {
 
 
   return (

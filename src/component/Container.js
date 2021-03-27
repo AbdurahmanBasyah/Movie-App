@@ -49,11 +49,17 @@ const Container = () => {
 
     useEffect(() => {
         const moviesLiked = JSON.parse(localStorage.getItem('react-movie-app-liked'));
-        setAddLikeMovie(moviesLiked);
+        if(moviesLiked){
+            setAddLikeMovie(moviesLiked);
+        }
+        
     }, [])
     useEffect(() => {
         const moviesBookmarked = JSON.parse(localStorage.getItem('react-movie-app-bookmarked'));
-        setBookmarkMovie(moviesBookmarked);
+        if(moviesBookmarked){
+            setBookmarkMovie(moviesBookmarked);
+        }
+        
     }, [])
 
 

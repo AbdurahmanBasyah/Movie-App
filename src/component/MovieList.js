@@ -4,7 +4,6 @@ const MovieList = (props) => {
     const LikedComponent = props.LikedComponent;
     const BookmarkedComponent = props.BookmarkedComponent;
 
-
     return (<div className="MovieList">
         {props.movies.map((movie, index) => <div className="Card">
             <img src = {movie.Poster} alt="movie"></img>

@@ -1,0 +1,13 @@
+
+.navbar-container{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    height: var(--lg-length3);
+    background-color: var(--dark2);
+    z-index: 1;
+}
+
+.Attention{
+    color: var(--primary2)
+}

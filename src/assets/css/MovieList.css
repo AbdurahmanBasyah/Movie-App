@@ -1,0 +1,64 @@
+.MovieList{
+    display: grid;
+    grid-gap: var(--med-length3);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto;
+}
+
+.Card:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px var(--dark1);
+}
+@media (max-width:1080px){
+    .MovieList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px){
+    .MovieList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 550px){
+    .MovieList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.MovieList img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.MovieList img:hover{
+    transform: scale(1.1);
+}
+
+.Card{
+    background-color: var(--dark2);
+    border-radius: var(--border-rad-lg);
+    overflow: hidden;
+    height: fit-content;
+}
+
+.MovieAddOn{
+    position: relative;
+    padding: var(--sm-length3);
+    background-color: var(--primary1);
+    height: 4rem;
+    transition: all .2s ease-in;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.title{
+    max-width: 70%;
+    color: var(--font-color1);
+    text-align: center;
+}

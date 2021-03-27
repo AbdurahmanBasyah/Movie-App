@@ -1,0 +1,14 @@
+.Header{
+    position: relative;
+    background-color: var(--dark1);
+    top: 0;
+    width: inherit;
+    height: var(--lg-length3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header h3{
+    color: var(--font-color2);
+}

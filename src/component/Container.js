@@ -9,8 +9,6 @@ import UnbookmarkedMovies from './UnbookmarkedMovies';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 toast.configure()
 const Container = () => {
     const [movies, setMovies] = useState([]);
